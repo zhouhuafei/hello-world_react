@@ -1,3 +1,5 @@
+> 本项目是使用create-react-app包的5.0.1版本创建的
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
