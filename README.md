@@ -1,4 +1,4 @@
-> 本项目是使用create-react-app包的5.0.1版本创建的
+> 本项目是使用`create-react-app`包的`5.0.1`版本创建的。使用的命令是`npx create-react-app hello-world_react --template typescript`。
 
 # Getting Started with Create React App
 
