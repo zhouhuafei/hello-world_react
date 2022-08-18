@@ -41,7 +41,9 @@
     ]
   },
   "devDependencies": {
+    "customize-cra": "^1.0.0",
     "react-app-rewired": "^2.2.1",
-    "sass": "^1.54.4"
+    "sass": "^1.54.4",
+    "sass-resources-loader": "^2.2.5"
   }
 }
