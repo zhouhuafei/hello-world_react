@@ -1,5 +1,6 @@
 import scss from './index.module.scss'
 import { px2vw } from '@/utils'
+import SvgIcon from '@/components/SvgIcon'
 
 const vw = px2vw(375)
 console.log('%c%s', 'color: green;', '在react中没有全局组件的概念')
@@ -11,7 +12,9 @@ export default function HelloWorld () {
 
   return (
     <div className={scss.hello}>
+      <SvgIcon iconName="home" iconClass={scss.iconStore} />
       <div className={scss.text}>hello world</div>
+      <SvgIcon iconName="mine" iconClass={scss.iconStore} />
     </div>
   )
 }

@@ -3,10 +3,13 @@
   align-items: center;
   justify-content: center;
 
+  .iconStore {
+    color: orange;
+  }
+
   .text {
     color: $brand;
     height: 50px; // ...TODO
     font-size: 30px; // ...TODO
-    // ...TODO 变成全局组件
   }
 }
