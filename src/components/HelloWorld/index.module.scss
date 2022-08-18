@@ -1,6 +1,12 @@
-.brandColorText {
-  color: $brand;
-  height: 50px; // ...TODO
-  font-size: 30px; // ...TODO
-  // ...TODO 变成全局组件
+.hello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+    color: $brand;
+    height: 50px; // ...TODO
+    font-size: 30px; // ...TODO
+    // ...TODO 变成全局组件
+  }
 }

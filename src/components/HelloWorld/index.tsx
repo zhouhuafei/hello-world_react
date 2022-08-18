@@ -10,6 +10,8 @@ export default function HelloWorld () {
   console.log('HelloWorld')
 
   return (
-    <div className={scss.brandColorText}>hello world</div>
+    <div className={scss.hello}>
+      <div className={scss.text}>hello world</div>
+    </div>
   )
 }
