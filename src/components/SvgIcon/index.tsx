@@ -22,19 +22,22 @@ function getHandleClick (handleClick: handleClickType) {
 }
 
 function SvgIcon (props: PropsType) {
-  props.iconClass = props.iconClass || ''
-  props.iconColor = props.iconColor || ''
-  props.handleClick = props.handleClick || (() => ({}))
+  const {
+    iconName,
+    iconClass = '',
+    iconColor = '',
+    handleClick = () => ({})
+  } = props
 
   return (
     <svg
       aria-hidden="true"
-      className={getClassName(props.iconClass)}
-      onClick={getHandleClick(props.handleClick)}
+      className={getClassName(iconClass)}
+      onClick={getHandleClick(handleClick)}
     >
       <use
-        xlinkHref={`#icon-${props.iconName}`}
-        fill={props.iconColor}
+        xlinkHref={`#icon-${iconName}`}
+        fill={iconColor}
       />
     </svg>
   )
