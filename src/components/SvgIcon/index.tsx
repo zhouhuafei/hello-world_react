@@ -3,10 +3,10 @@ import './index.scss'
 type handleClickType = () => void
 
 interface PropsType {
-  iconName: string,
-  iconClass?: string,
-  iconColor?: string,
-  handleClick?: handleClickType
+  readonly iconName: string,
+  readonly iconClass?: string,
+  readonly iconColor?: string,
+  readonly handleClick?: handleClickType
 }
 
 function getClassName (iconClass: string) {
@@ -25,7 +25,7 @@ function SvgIcon (props: PropsType) {
   const {
     iconName,
     iconClass = '',
-    iconColor = '',
+    iconColor = 'currentColor',
     handleClick = () => ({})
   } = props
 
