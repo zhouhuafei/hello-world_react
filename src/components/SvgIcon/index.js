@@ -2,31 +2,44 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './index.scss'
 
-const SvgIcon = props => {
-  const fHandleClick = () => {
-    props.handleClick && props.handleClick()
-  }
+function getClassName (iconClass) {
+  let res = 'svg-icon'
+  if (iconClass) res += ` ${iconClass}`
+  return res
+}
 
-  const { iconClass, iconName, fillColor, size } = props
+function getHandleClick (handleClick) {
+  return function () {
+    handleClick && handleClick()
+  }
+}
+
+function SvgIcon (props) {
+  const { iconName, iconClass, iconColor, handleClick } = props
 
   return (
     <svg
-      className={iconClass ? `svg-icon ${iconClass}` : 'svg-icon'}
-      width={size}
-      height={size}
       aria-hidden="true"
-      onClick={fHandleClick}>
-      <use xlinkHref={`#icon-${iconName}`} fill={fillColor}></use>
+      className={getClassName(iconClass)}
+      onClick={getHandleClick(handleClick)}
+    >
+      <use
+        xlinkHref={`#icon-${iconName}`}
+        fill={iconColor}
+      />
     </svg>
   )
 }
 
 SvgIcon.propTypes = {
-  iconClass: PropTypes.string,
   iconName: PropTypes.string.isRequired,
-  fillColor: PropTypes.string
+  iconClass: PropTypes.string,
+  iconColor: PropTypes.string,
+  handleClick: PropTypes.func
 }
 
-SvgIcon.defaultProps = { fillColor: 'currentColor' }
+SvgIcon.defaultProps = {
+  iconColor: 'currentColor'
+}
 
 export default SvgIcon

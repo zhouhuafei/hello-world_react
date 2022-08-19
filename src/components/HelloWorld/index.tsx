@@ -12,9 +12,9 @@ export default function HelloWorld () {
 
   return (
     <div className={scss.hello}>
-      <SvgIcon iconName="home" iconClass={scss.iconStore} />
+      <SvgIcon iconName="home" iconClass={scss.icon} />
       <div className={scss.text}>hello world</div>
-      <SvgIcon iconName="mine" iconClass={scss.iconStore} />
+      <SvgIcon iconName="mine" iconClass={scss.icon} />
     </div>
   )
 }
