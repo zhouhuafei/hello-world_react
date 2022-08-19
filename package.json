@@ -18,6 +18,7 @@
   },
   "scripts": {
     "svgo": "svgo -f ./src/icons/svg",
+    "preview": "http-server ./build",
     "start": "cross-env BROWSER=none PORT=3080 react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
@@ -44,6 +45,7 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "customize-cra": "^1.0.0",
+    "http-server": "^14.1.1",
     "postcss-px-to-viewport": "^1.1.1",
     "react-app-rewired": "^2.2.1",
     "sass": "^1.54.4",
