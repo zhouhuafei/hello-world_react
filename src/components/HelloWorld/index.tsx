@@ -1,7 +1,7 @@
 import { useState, useEffect, MouseEvent } from 'react'
 import scss from './index.module.scss'
-import { px2vw } from '@/utils'
-import SvgIcon from '@/components/SvgIcon'
+import { px2vw } from 'src/utils'
+import SvgIcon from 'src/components/SvgIcon'
 
 const vw = px2vw(375)
 console.log('%c%s', 'color: green;', '在react中没有全局组件的概念')
