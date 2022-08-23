@@ -1,7 +1,7 @@
 function Mine () {
   return (
     <div className="Mine">
-      <div>Mine</div>
+      <h4 style={{ textAlign: 'center' }}>Mine</h4>
     </div>
   )
 }

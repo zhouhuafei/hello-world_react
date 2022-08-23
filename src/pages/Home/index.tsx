@@ -1,6 +1,5 @@
-import React from 'react'
-import logo from './logo.svg'
 import './index.scss'
+import logo from 'src/logo.svg'
 import HelloWorld from 'src/components/HelloWorld'
 
 function Home () {

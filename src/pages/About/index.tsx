@@ -1,7 +1,7 @@
 function About () {
   return (
     <div className="About">
-      <div>About</div>
+      <h4 style={{ textAlign: 'center' }}>About</h4>
     </div>
   )
 }

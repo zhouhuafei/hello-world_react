@@ -1,26 +1,24 @@
-import React from 'react'
-import logo from './logo.svg'
 import './App.scss'
-import HelloWorld from 'src/components/HelloWorld'
+import { Link } from 'react-router-dom'
+import RouterCollection from 'src/router/RouterCollection'
 
 function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <HelloWorld />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Layout">
+        <div className="NavBar">
+          <Link className="NavBarItem" to="/home">home</Link>
+          <Link className="NavBarItem" to="/mine">mine</Link>
+          <Link className="NavBarItem" to="/about">about</Link>
+        </div>
+        <h2 style={{ textAlign: 'center' }}>Welcome to React Router!</h2>
+        <div className="NavBar">
+          <Link className="NavBarItem" to="/home">home</Link>
+          <Link className="NavBarItem" to="/mine">mine</Link>
+          <Link className="NavBarItem" to="/about">about</Link>
+        </div>
+        <RouterCollection />
+      </div>
     </div>
   )
 }
