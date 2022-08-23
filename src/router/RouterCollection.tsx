@@ -6,9 +6,9 @@ import About from 'src/pages/About'
 function RouterCollection () {
   return (
     <Routes>
-      <Route path="home" element={<Home />} />
-      <Route path="mine" element={<Mine />} />
-      <Route path="about" element={<About />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/mine" element={<Mine />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   )
 }
