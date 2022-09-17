@@ -12,7 +12,7 @@ function MobxReact2 () {
 
   return (
     <div>
-      <span>mobx：{myTimer.secondsPassed}</span>
+      <span>mobx-react：{myTimer.secondsPassed}</span>
       <button onClick={onClick}>状态+1</button>
       <button onClick={onClickReset}>状态reset</button>
     </div>
