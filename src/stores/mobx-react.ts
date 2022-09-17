@@ -7,8 +7,8 @@ class Timer {
     makeAutoObservable(this)
   }
 
-  increase () {
-    this.secondsPassed += 1
+  increase (num: any) {
+    this.secondsPassed += num
   }
 
   reset () {

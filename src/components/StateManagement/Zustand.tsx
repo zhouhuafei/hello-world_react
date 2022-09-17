@@ -3,7 +3,7 @@ import { useBearStore } from 'src/stores/zustand'
 function Zustand () {
 
   function onClick () {
-    state.increasePopulation()
+    state.increasePopulation(1)
   }
 
   function onClickReset () {

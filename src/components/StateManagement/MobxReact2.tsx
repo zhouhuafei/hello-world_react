@@ -3,7 +3,7 @@ import { myTimer } from 'src/stores/mobx-react'
 
 function MobxReact2 () {
   function onClick () {
-    myTimer.increase()
+    myTimer.increase(1)
   }
 
   function onClickReset () {
