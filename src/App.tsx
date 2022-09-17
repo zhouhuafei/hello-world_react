@@ -1,10 +1,22 @@
 import './App.scss'
 import { Link } from 'react-router-dom'
 import RouterCollection from 'src/router/RouterCollection'
+import Zustand from 'src/components/StateManagement/Zustand'
+import Zustand2 from 'src/components/StateManagement/Zustand2'
+import Mobx from 'src/components/StateManagement/Mobx'
+import Mobx2 from 'src/components/StateManagement/Mobx2'
+import Redux from 'src/components/StateManagement/Redux'
+import Redux2 from 'src/components/StateManagement/Redux2'
 
 function App () {
   return (
     <div className="App">
+      <Zustand></Zustand>
+      <Zustand2></Zustand2>
+      <Mobx></Mobx>
+      <Mobx2></Mobx2>
+      <Redux></Redux>
+      <Redux2></Redux2>
       <div className="Layout">
         <div className="NavBar">
           <Link className="NavBarItem" to="/home">home</Link>

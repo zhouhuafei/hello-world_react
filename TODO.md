@@ -1,2 +1,0 @@
-* redux // ...TODO
-* mobx // ...TODO
