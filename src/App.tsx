@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import RouterCollection from 'src/router/RouterCollection'
 import Zustand from 'src/components/StateManagement/Zustand'
 import Zustand2 from 'src/components/StateManagement/Zustand2'
-import Mobx from 'src/components/StateManagement/Mobx'
-import Mobx2 from 'src/components/StateManagement/Mobx2'
+import MobxReact from 'src/components/StateManagement/MobxReact'
+import MobxReact2 from 'src/components/StateManagement/MobxReact2'
 import Redux from 'src/components/StateManagement/Redux'
 import Redux2 from 'src/components/StateManagement/Redux2'
 
@@ -13,8 +13,8 @@ function App () {
     <div className="App">
       <Zustand></Zustand>
       <Zustand2></Zustand2>
-      <Mobx></Mobx>
-      <Mobx2></Mobx2>
+      <MobxReact></MobxReact>
+      <MobxReact2></MobxReact2>
       <Redux></Redux>
       <Redux2></Redux2>
       <div className="Layout">

@@ -1,6 +1,6 @@
 import { useBearStore } from 'src/stores/zustand'
 
-function Zustand () {
+function Zustand2 () {
 
   function onClick () {
     state.increasePopulation()
@@ -20,4 +20,4 @@ function Zustand () {
   )
 }
 
-export default Zustand
+export default Zustand2

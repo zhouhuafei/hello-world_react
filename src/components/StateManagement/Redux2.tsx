@@ -1,7 +1,7 @@
 import { store, incremented, decremented } from 'src/stores/redux'
 import { useEffect, useState } from 'react'
 
-function Redux () {
+function Redux2 () {
 
   useEffect(() => {
     return () => {
@@ -32,4 +32,4 @@ function Redux () {
   )
 }
 
-export default Redux
+export default Redux2

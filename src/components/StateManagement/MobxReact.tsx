@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react'
-import { myTimer } from 'src/stores/mobx'
+import { myTimer } from 'src/stores/mobx-react'
 
-function Mobx () {
+function MobxReact () {
   function onClick () {
     myTimer.increase()
   }
@@ -19,4 +19,4 @@ function Mobx () {
   )
 }
 
-export default observer(Mobx)
+export default observer(MobxReact)
