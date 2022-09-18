@@ -6,7 +6,6 @@ import Zustand2 from 'src/components/StateManagement/Zustand2'
 import MobxReact from 'src/components/StateManagement/MobxReact'
 import MobxReact2 from 'src/components/StateManagement/MobxReact2'
 import Redux from 'src/components/StateManagement/Redux'
-import Redux2 from 'src/components/StateManagement/Redux2'
 
 function App () {
   return (
@@ -16,7 +15,6 @@ function App () {
       <MobxReact></MobxReact>
       <MobxReact2></MobxReact2>
       <Redux></Redux>
-      <Redux2></Redux2>
       <div className="Layout">
         <div className="NavBar">
           <Link className="NavBarItem" to="/home">home</Link>
