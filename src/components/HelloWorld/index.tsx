@@ -12,9 +12,13 @@ export default function HelloWorld () {
   let [calculatorFields, setCalculatorFields] = useState({ calculator: { count: 21, name: '计算器' } })
 
   useEffect(() => {
-    console.log('HelloWorld useEffect')
+    console.log('HelloWorld useEffect - componentDidMount和componentDidUpdate时触发')
     console.log('count', count)
     console.log('calculatorFields.calculator.count', calculatorFields.calculator.count)
+
+    return () => {
+      console.log('HelloWorld useEffect - componentWillUnmount时触发')
+    }
   }, [
     count,
     calculatorFields
