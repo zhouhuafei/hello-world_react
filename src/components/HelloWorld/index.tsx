@@ -8,15 +8,13 @@ console.log('%c%s', 'color: green;', '在react中没有全局组件的概念')
 console.log('%c%s等于%s', 'color: green;', '在本项目中375px', vw)
 
 export default function HelloWorld () {
-  console.log('HelloWorld')
-
   let [count, setCount] = useState(11)
   let [calculatorFields, setCalculatorFields] = useState({ calculator: { count: 21, name: '计算器' } })
 
   useEffect(() => {
-    console.log('useEffect')
+    console.log('HelloWorld useEffect')
     console.log('count', count)
-    console.log('calculatorFields.calculator.count', count)
+    console.log('calculatorFields.calculator.count', calculatorFields.calculator.count)
   }, [
     count,
     calculatorFields
